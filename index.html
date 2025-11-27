@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenLineGO Coaching Companion Version 1.4</title>
+  <meta name="description" content="Greenline Assistant v1.3 — click the chat icon in the bottom-right to start talking." />
+  <meta name="theme-color" content="#0d1117" />
+  <link rel="icon" href="logo.png" />
+
+  <style>
+    :root {
+      --bg: #0d1117;
+      --fg: #f0f6fc;
+      --muted: #8b949e;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, sans-serif;
+      background-color: var(--bg);
+      color: var(--fg);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    header {
+      margin-bottom: 1rem;
+    }
+
+    /* ✅ Responsive logo */
+    .logo {
+      max-width: clamp(80px, 20vw, 140px);
+      height: auto;
+      margin-bottom: 1rem;
+      border-radius: 12px;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 3vw, 5rem);
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: var(--muted);
+      max-width: 500px;
+      margin: 0 auto;
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        transition: none !important;
+        animation: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="logo.png" alt="Greenline Logo" class="logo" />
+    <h2>GreenLineGO Coaching Companion Version 1.4</h2>
+    <p>Click the chat icon in the bottom-right to start talking.</p>
+  </header>
+
+  <footer>
+    <p>© 2025 GreenLine Conversations™️</p>
+  </footer>
+
+  <!-- ElevenLabs floating voice assistant -->
+  <elevenlabs-convai agent-id="agent_9501k9femw44ehkbr4awzzf7bgf1"></elevenlabs-convai>
+  <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+</body>
+</html>
